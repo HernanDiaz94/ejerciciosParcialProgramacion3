@@ -8,22 +8,15 @@
 </head>
 <body>
     <h1>Ejercicio 10</h1>
-    <table border="1">
-        <tr>
-            <td>Colores</td>
-        </tr>
-
-        <tr>
-            <td>
-                <?php
-                    $colores=['rojo','amarillo','verde','azul'];
-
-                    for ($i=0; $i < count($colores) ; $i++) { 
-                        echo " $colores[$i] ";
-                    }
-                ?>
-            </td>
-        </tr>
-    </table>
+    <ul>
+        <?php
+            $colores=['rojo','amarillo','verde','azul'];
+            for($i=0;$i<count($colores); $i++){?>
+                
+                <li><?php echo "$colores[$i]"?></li>
+            
+            <?php } ?>
+        
+    </ul>
 </body>
 </html>
